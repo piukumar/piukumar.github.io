@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prayaas – Focus timer for Android</title>
+  <meta name="description" content="Prayaas is a simple focus timer for Android. Focus as long as you stay in flow, then take a break based on the time you worked.">
+  <style>
+    :root {
+      --bg: #f6efe6;
+      --card: #fffaf4;
+      --text: #2b2420;
+      --muted: #6b5f57;
+      --accent: #b3612e;
+      --accent-dark: #8f4b22;
+      --border: #e6d9ca;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1815;
+        --card: #26201c;
+        --text: #f1e9e0;
+        --muted: #b8aca2;
+        --accent: #d98a55;
+        --accent-dark: #e9a275;
+        --border: #3a312b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      width: 100%;
+      max-width: 520px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px 32px;
+      text-align: center;
+    }
+    .mark {
+      font-size: 56px;
+      line-height: 1;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 0 0 8px;
+      letter-spacing: -0.5px;
+    }
+    .tagline {
+      color: var(--muted);
+      margin: 0 0 28px;
+    }
+    .play {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 999px;
+    }
+    .play:hover { background: var(--accent-dark); }
+    footer {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--muted);
+    }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">~</div>
+    <h1>Prayaas</h1>
+    <p class="tagline">A simple focus timer for Android. Focus as long as you stay in flow, then take a break based on the time you worked.</p>
+    <a class="play" href="https://play.google.com/store/apps/details?id=com.flowmodoro.app">Get it on Google Play</a>
+    <footer>
+      <a href="https://sites.google.com/view/prayaas-privacy-policy/home">Privacy policy</a>
+    </footer>
+  </main>
+</body>
+</html>
